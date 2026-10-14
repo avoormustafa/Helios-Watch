@@ -89,8 +89,3 @@ electric_field   = space_data["electric_field"]
 kp_index         = space_data["Kp_index"]
 dst_index        = space_data["Dst_index"]
 ae_index         = space_data["AE_index"]
-
-# --- Verification Check ---
-print(f"Loaded {len(space_data)} total columns into NumPy.")
-print("Example - Scalar Array:", scalar)
-print("Example - SW Plasma Temp Array:", sw_plasma_temp)
