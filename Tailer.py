@@ -1,18 +1,9 @@
 """
-OMNIWeb collector
-=================
-Queries NASA OMNIWeb (the same service behind https://omniweb.gsfc.nasa.gov/form/dx1.html)
-for hourly OMNI data and saves the results as data.txt, next to this script.
-
-No installs needed (Python 3 standard library only).
-
 Usage:
     python omniweb_collector.py range 20160901 20260930   # data.txt = that date range
     python omniweb_collector.py latest                    # data.txt = the most recent data
     python omniweb_collector.py live                      # keep checking; add new hours to data.txt
 
-Note: OMNIWeb is not real-time. Its newest solar-wind data is usually a few
-weeks old, so "live" means "the newest data OMNIWeb has", checked every few hours.
 """
 
 import datetime as dt
